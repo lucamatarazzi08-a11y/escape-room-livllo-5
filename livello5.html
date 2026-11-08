@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Monte Cieco · Livello 5 · La Galleria Foto</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Libre+Franklin:wght@400;600&family=Permanent+Marker&display=swap">
+<style>
+:root{color-scheme:dark;--bg:#110a09;--bg2:#1d1210;--red:#d2301f;--red2:#ff6a52;--paper:#f2ebd9;--paper2:#e4dac0;--ink:#241a15;--ink2:#6a5b50;--film:#d98a2b;--ok:#3f7d4e;
+--hd:"DM Serif Display",Georgia,serif;--bd:"Libre Franklin","Helvetica Neue",Arial,sans-serif;--mk:"Permanent Marker","Comic Sans MS",cursive;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:#efe3d3;font-family:var(--bd);font-size:17px;line-height:1.55}
+body{background:radial-gradient(900px 420px at 50% -8%,#5a140c,transparent 72%),radial-gradient(500px 300px at 100% 100%,#2a0f0a,transparent 70%),var(--bg)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+header{padding:12px 16px 0;text-align:center}
+.brand{font-family:var(--hd);font-size:1.5rem;letter-spacing:.02em;color:#ffe1d6;text-shadow:0 0 18px #d2301f}
+.brand small{display:block;font-family:var(--bd);font-size:.72rem;letter-spacing:.2em;color:#d9a79b;text-transform:uppercase}
+.line{position:relative;max-width:640px;margin:6px auto 0;height:98px;display:flex;justify-content:space-around;align-items:flex-start;padding:0 10px}
+.line::before{content:"";position:absolute;left:0;right:0;top:6px;height:18px;border-bottom:2px solid #8a6a58;border-radius:0 0 50% 50%/0 0 14px 14px}
+.slot{position:relative;margin-top:14px;width:64px;transform-origin:50% 0;text-align:center}
+.slot::before{content:"";position:absolute;top:-8px;left:50%;width:10px;height:18px;margin-left:-5px;background:#b58a5a;border-radius:2px;z-index:2}
+.pol{background:#f6f1e3;padding:5px 5px 14px;box-shadow:0 4px 10px #000a;width:60px;margin:0 auto}
+.pol i{display:flex;align-items:center;justify-content:center;height:46px;background:#2a1a16;font-style:normal;font-size:1.4rem;filter:grayscale(1) brightness(.4);border:1px dashed #6a4a3e}
+.pol span{position:absolute;bottom:2px;left:0;right:0;font-family:var(--mk);font-size:.55rem;color:#6a3b2c}
+.slot.done{animation:sw 3.2s ease-in-out infinite}.slot.done .pol i{filter:none;background:#e8d5b0;border:0}
+@keyframes sw{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+main{max-width:760px;margin:0 auto;padding:6px 12px 60px;position:relative;z-index:1}
+.tappa{display:none;background:var(--paper);color:var(--ink);border-radius:3px;padding:22px 22px 26px;box-shadow:0 0 0 8px #f8f3e6,0 0 0 9px #0006,0 20px 50px #000c}
+.tappa.on{display:block;animation:dev .9s ease-out}
+@keyframes dev{from{opacity:0;filter:brightness(.2) contrast(1.6) sepia(1)}}
+.kick{font-family:var(--mk);color:var(--red);font-size:1rem;transform:rotate(-1.5deg);display:inline-block}
+h1,h2{font-family:var(--hd);font-weight:400;margin:2px 0 8px;line-height:1.15}h1{font-size:2.2rem}h2{font-size:1.65rem}
+p{margin:.6em 0}
+.note{background:var(--paper2);border-left:5px solid var(--red);padding:12px 15px;margin:12px 0;font-size:.95rem}
+.btn{font-family:var(--bd);font-weight:600;font-size:.98rem;background:var(--red);color:#fff;border:0;border-radius:999px;padding:11px 24px;cursor:pointer;box-shadow:0 0 0 3px #f2ebd9,0 0 0 5px var(--red),0 6px 16px #d2301f66;transition:transform .15s}
+.btn:hover{transform:translateY(-2px);background:#e23d2b}.btn:disabled{opacity:.4;pointer-events:none}
+.btn.ghost{background:transparent;color:var(--red);box-shadow:inset 0 0 0 2px var(--red)}
+.fb{margin:12px 0;padding:10px 14px;border-left:6px solid var(--film);background:#f3e4c4;font-size:.95rem}.fb.g{border-color:var(--ok);background:#dbead7}.fb.b{border-color:var(--red);background:#f4d8d0}
+.qh{font-family:var(--hd);font-size:1.25rem;margin:16px 0 8px}
+.opt{display:block;width:100%;text-align:left;font-family:var(--bd);font-size:.97rem;background:#fff;color:var(--ink);border:2px solid #bcae92;border-radius:4px;padding:10px 12px;margin:7px 0;cursor:pointer;line-height:1.35}
+.opt:hover:not(:disabled){border-color:var(--red)}.opt.right{background:#d5e8d2;border-color:var(--ok)}.opt.wrong{background:#f3d3ca;border-color:var(--red);opacity:.8}.opt:disabled{cursor:default}
+.ph{position:relative;touch-action:none;cursor:crosshair;border:10px solid #fff;box-shadow:0 8px 24px #0007;margin:12px 0;line-height:0;background:#000;user-select:none;-webkit-user-select:none}
+.ph svg{width:100%;height:auto;display:block}
+.lens{position:absolute;width:140px;height:140px;border-radius:50%;border:4px solid #f3e9cf;box-shadow:0 0 0 2px #000,0 8px 22px #000b;pointer-events:none;display:none;background-repeat:no-repeat;z-index:3}
+.cnt{font-family:var(--mk);font-size:1.1rem;color:var(--red)}
+.clues div{background:#fff;border-left:5px solid var(--red);padding:7px 11px;margin:6px 0;font-size:.92rem;animation:dev .6s}
+.tbl{width:100%;border-collapse:collapse;font-size:.9rem;margin:10px 0}.tbl td{padding:8px 6px;border-bottom:1px solid #cdbf9f;vertical-align:middle}.tbl td:first-child{font-weight:600;width:38%}.tbl td:last-child{text-align:right;width:70px}
+.tbl .kv{font-family:"Courier New",monospace;font-size:.82rem;color:#4a3a30}
+.chk{width:22px;height:22px;accent-color:var(--red);cursor:pointer}
+.spy{background:#1e1411;color:#ffd7ca;border-radius:4px;padding:12px 14px;font-size:.9rem;min-height:110px}.spy div{padding:3px 0}
+.chat{background:#2a1c18;border-radius:4px;padding:12px;margin:10px 0;max-height:420px;overflow:auto}
+.bub{max-width:88%;padding:9px 12px;border-radius:14px;margin:8px 0;font-size:.95rem;line-height:1.4;animation:dev .5s}
+.bub.c{background:#fbd9d2;color:#3a120c;border-bottom-left-radius:3px}.bub.me{background:#e9e0cc;color:#241a15;margin-left:auto;border-bottom-right-radius:3px}
+.bub small{display:block;font-weight:600;color:#8a2a1c;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px}
+.lever{display:inline-block;font-size:.68rem;background:#8a2a1c;color:#fff;border-radius:10px;padding:1px 8px;margin-top:4px}
+.set{display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center;background:#fff;border:1px solid #cdbf9f;border-radius:4px;padding:9px 12px;margin:7px 0}
+.set b{font-weight:600}.set small{grid-column:1;color:var(--ink2);font-size:.82rem}.set .why{grid-column:1/-1;font-size:.85rem;margin-top:3px}
+.set.ok{border-color:var(--ok);background:#eef6e9}.set.bad{border-color:var(--red);background:#fbeae5}
+.set select{grid-row:1/3;grid-column:2;font-family:inherit;font-size:.85rem;padding:7px 9px;border:2px solid #bcae92;border-radius:4px;background:#fff;color:var(--ink);max-width:200px}
+.mfield{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;width:100%;text-align:left;background:#fff;border:2px solid #bcae92;border-radius:4px;padding:9px 12px;margin:7px 0;cursor:pointer;font-family:inherit;font-size:.92rem;color:var(--ink);line-height:1.35}
+.mfield b{min-width:150px}.mfield span{color:var(--ink2);font-family:"Courier New",monospace;font-size:.8rem}
+.mfield.sel{background:#fff3c2;border-color:var(--film)}
+.sw{appearance:none;width:46px;height:26px;border-radius:20px;background:#b9ab90;position:relative;cursor:pointer;transition:.3s;grid-row:1/3;grid-column:2}
+.sw::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.3s}.sw:checked{background:var(--ok)}.sw:checked::after{left:23px}
+.meter{height:14px;background:#d9ceb4;border-radius:8px;overflow:hidden;margin:8px 0}.meter i{display:block;height:100%;background:linear-gradient(90deg,#d98a2b,#d2301f);transition:width .5s}
+ol.les{padding-left:1.2em}ol.les li{margin:.6em 0}
+.code{font-family:var(--hd);font-size:1.9rem;letter-spacing:.12em;text-align:center;border:4px double var(--red);color:var(--red);padding:10px;margin:14px 0;background:#fff}
+.src{font-size:.8rem;color:var(--ink2);border-top:1px dashed #9b8f78;margin-top:14px;padding-top:8px}
+.pf{background:#fff;border:1px solid #cdbf9f;border-radius:4px;padding:14px;margin:10px 0}.pf .av{font-size:2.3rem;line-height:1}.pf h3{font-family:var(--hd);font-weight:400;font-size:1.25rem;margin:4px 0}.pf ul{margin:6px 0 10px;padding-left:1.1em;font-size:.93rem}.pf li{margin:3px 0}.acts{display:flex;gap:8px;flex-wrap:wrap}
+.hidden{display:none!important}
+.logl p{font-family:var(--mk);font-size:.98rem;color:#7a2a1c;margin:5px 0;animation:dev .6s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.pv{background:#fff;border:1px solid #cdbf9f;border-radius:4px;padding:12px 14px;margin:10px 0;font-size:.9rem}
+.pv h4{margin:0 0 2px;font-family:var(--hd);font-weight:400;font-size:1.08rem}
+.pv .who{margin:0 0 7px;color:var(--ink2);font-size:.84rem}
+.pv ul{margin:0;padding-left:18px}.pv li{margin:4px 0}
+.pv li.ok{color:var(--ok)}.pv li.bad{color:#a3301f}
+.step{display:grid;grid-template-columns:auto 1fr auto;gap:2px 10px;align-items:center;background:#fff;border:2px solid #cdbf9f;border-radius:4px;padding:9px 12px;margin:7px 0}
+.step .num{width:26px;height:26px;border-radius:50%;background:var(--paper2);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:.82rem;color:var(--ink)}
+.step b{font-weight:600;font-size:.9rem;line-height:1.35}
+.step .mv{display:flex;flex-direction:column;gap:3px}
+.step .mv button{border:1px solid #bcae92;background:#fff;border-radius:3px;width:36px;height:29px;cursor:pointer;font-size:.7rem;line-height:1;color:var(--ink);padding:0}
+.step .mv button:disabled{opacity:.3;cursor:default}
+.step.ok{border-color:var(--ok);background:#eef6e9}
+.step.bad{border-color:var(--red);background:#fbeae5}
+.step .why{grid-column:1/-1;font-size:.82rem;color:#8a2a1c;margin-top:3px}
+@media (max-width:520px){.step{padding:9px 10px}.step b{font-size:.86rem}.step .mv button{width:40px;height:32px}}
+@media (max-width:520px){.set{grid-template-columns:1fr}.set select{grid-row:auto;grid-column:1;max-width:none;width:100%;margin-top:7px}.set b,.set small,.set .why{grid-column:1}}
+</style>
+</head>
+<body>
+<header>
+ <div class="brand">Galleria Foto<small>Camera oscura · Monte Cieco</small></div>
+ <div class="line" id="line"></div>
+</header>
+
+<main>
+<section class="tappa on" id="t0">
+ <div class="kick">Livello 5</div>
+ <h1>La Galleria Foto</h1>
+ <div class="logl" id="log"></div>
+ <div class="note"><b>Di che cosa parla questo livello.</b> Elia ha lasciato online una galleria di foto, e qualcuno l’ha studiata per avvicinarla e raccogliere informazioni. Ora la <b>ripuliamo</b>: capisci cosa rivelano le foto, togli i dati nascosti nei file, ricostruisci le conversazioni sospette ricevute da Elia, decidi chi può restare tra i suoi contatti e sistemi le impostazioni con cui il profilo mostra i post.</div>
+ <p><button class="btn hidden" id="go0">Entra in camera oscura</button></p>
+</section>
+
+<section class="tappa" id="t1">
+ <div class="kick">Sviluppo 1 · Il provino</div>
+ <h2>Cosa rivelano queste foto?</h2>
+ <div class="note"><b>Perché guardare i dettagli.</b> Chi vuole ingannare qualcuno studia le sue foto. Un dettaglio da solo sembra innocuo, ma <b>messi insieme</b> dicono chi sei, dove lavori, quando sei sola e come entrare nei tuoi account. Questa tecnica si chiama <b>raccolta di informazioni</b> e precede quasi sempre una truffa. In questa tappa ne analizzi <b>due</b>: una scattata al lavoro, una a casa.</div>
+ <p id="ptxt"></p>
+ <p class="cnt" id="cnt"></p>
+ <div class="ph" id="ph"></div>
+ <div class="clues" id="clues"></div>
+ <div id="q1"></div>
+</section>
+
+<section class="tappa" id="t2">
+ <div class="kick">Sviluppo 2 · I dati nascosti</div>
+ <h2>Prepara le foto per la nuova galleria</h2>
+ <div class="note"><b>Cosa sono i metadati.</b> Ogni foto scattata con il telefono contiene, oltre all’immagine, delle <b>informazioni nascoste</b>: dove e quando è stata scattata, con quale telefono, chi è il proprietario. Chi riceve il file originale può leggerle. Alcuni social le tolgono quando carichi la foto, altri no: non ci si può contare.<br><b>Come si tolgono.</b> Disattivando la posizione per la fotocamera, togliendola nelle opzioni di condivisione (su iPhone: Opzioni › Posizione) o dalle proprietà del file (su Windows: Dettagli › Rimuovi proprietà).<br><b>La regola.</b> Ogni destinatario deve ricevere <b>solo i dati che gli servono</b>: né di più, né di meno.</div>
+ <p>Elia vuole ripubblicare tre foto della galleria, ognuna per un destinatario diverso. Prima di inviare ognuna, seleziona <b>Rimuovi</b> solo per i dati che <b>non servono</b>.</p>
+ <div id="dt"></div>
+ <table class="tbl" id="meta"></table>
+ <div class="spy" id="spy"></div>
+ <p><button class="btn" id="pub">Invia la foto</button></p>
+ <div id="f2"></div><div id="adv2" class="hidden"></div><div id="q2"></div>
+</section>
+
+<section class="tappa" id="t3">
+ <div class="kick">Sviluppo 3 · Le conversazioni sospette</div>
+ <h2>Cosa avrebbe dovuto rispondere Elia?</h2>
+ <div class="note"><b>Cos’è il social engineering.</b> È l’inganno che colpisce la <b>persona</b>, non il computer. Chi lo usa sfrutta quattro leve: la <b>fiducia</b> (si finge qualcuno), l’<b>urgenza</b> (non hai tempo), l’<b>autorità</b> (il capo, l’assistenza) e le <b>informazioni vere</b> che ha raccolto su di te, per sembrare credibile.<br><b>La regola.</b> Chi ti contatta non è mai verificato: ferma la conversazione e controlla tu, su un canale ufficiale. Nessun servizio serio ti chiede password o codici.</div>
+ <p>Nel telefono di Elia ci sono <b>cinque conversazioni sospette</b> dei giorni prima della sparizione: qualcuno ha usato le informazioni della galleria. Ogni conversazione parte da un dettaglio che Elia ha pubblicato: un turno, un badge, un indirizzo, una data, il nome della gatta, un IBAN. Ricostruiscile: a ogni battuta scegli cosa Elia avrebbe dovuto rispondere. Per superare una conversazione devi rispondere bene <b>a ogni battuta</b>; se sbagli, ricominci.</p>
+ <p class="cnt" id="sch"></p><p id="sci" class="fb"></p>
+ <div class="chat" id="chat"></div>
+ <div id="opts3"></div><div id="f3"></div><div id="q3"></div>
+</section>
+
+<section class="tappa" id="t4">
+ <div class="kick">Sviluppo 4 · Contatti e privacy</div>
+ <h2>Chi può entrare e chi può vedere?</h2>
+ <div class="note"><b>Perché i contatti contano.</b> Chi accetti come contatto vede le tue foto, i tuoi post e i tuoi orari. I truffatori creano profili falsi per entrare nella tua cerchia. Guarda da quanto esiste l’account, cosa ha pubblicato, chi sono gli amici in comune e cosa ti chiede.<br><b>Tre azioni.</b> <b>Accetta</b>: profilo che riconosci e che è coerente. <b>Verifica prima</b>: contatta la persona su un altro canale che già conosci. <b>Rifiuta e segnala</b>: profilo falso o truffa.</div>
+ <p>Ci sono sei richieste in sospeso nel profilo di Elia. Per ognuna decidi l’azione giusta.</p>
+ <p class="cnt" id="rq"></p>
+ <div id="card"></div><div id="f4"></div><div id="q4"></div><div id="priv" class="hidden"></div><div id="q5"></div>
+</section>
+
+<section class="tappa" id="t5">
+ <div class="kick">Stampa finale</div>
+ <h2>Cosa hai imparato</h2>
+ <ol class="les">
+  <li><b>Una foto racconta più di quanto pensi:</b> badge, post-it, calendari, etichette e perfino il paesaggio dalla finestra. Prima di pubblicare, guarda lo sfondo.</li>
+  <li><b>I metadati</b> (posizione, data, autore, numero di serie, miniatura) viaggiano dentro il file. Ogni destinatario deve ricevere solo quelli che gli servono: gli altri vanno tolti.</li>
+  <li><b>Il social engineering</b> inganna la persona con fiducia, urgenza, autorità e informazioni vere, al telefono come in chat. Ferma la conversazione e verifica tu su un canale ufficiale: nessuno serio chiede password o codici.</li>
+  <li><b>I contatti</b> vedono quello che pubblichi: controlla da quanto esiste l’account, cosa ha pubblicato e gli amici in comune, e verifica con un altro canale se non sei sicura.</li>
+  <li><b>La privacy si imposta voce per voce:</b> chi vede i post, la lista amici, i tag, la posizione e chi può trovarti. Mettere il profilo “privato” non basta se poi lasci aperti tag e posizione.</li>
+ </ol>
+ <div class="src">Per approfondire: Garante per la protezione dei dati personali (garanteprivacy.it), Polizia Postale (commissariatodips.it), ACN – Agenzia per la Cybersicurezza Nazionale (acn.gov.it).</div>
+ <p>Il tuo codice di sblocco per la serratura:</p>
+ <div class="code">GALLERIA-5</div>
+ <a class="btn" id="lock" href="#" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">Apri la serratura</a>
+ <p id="warn" class="hidden" style="color:var(--red)">(Link del Modulo non ancora inserito)</p>
+</section>
+</main>
+
+<script>
+// ====== DA MODIFICARE: link del Google Modulo del Livello 5 ======
+const FORM_URL = "https://forms.gle/1tq346KbpeczZvo26";
+// =================================================================
+const $=id=>document.getElementById(id);
+const shuf=a=>[...a].sort(()=>Math.random()-.5);
+
+/* ---------- stenditoio ---------- */
+const POL=[["🔍","indizi"],["📋","metadati"],["📞","chiamate"],["👥","contatti"]];
+$("line").innerHTML=POL.map((p,i)=>`<div class="slot" id="sl${i}"><div class="pol"><i>${p[0]}</i><span>${p[1]}</span></div></div>`).join("");
+const pola=i=>$("sl"+i).classList.add("done");
+function go(n){document.querySelectorAll(".tappa").forEach(t=>t.classList.remove("on"));$("t"+n).classList.add("on");scrollTo({top:0,behavior:"smooth"})}
+
+/* ---------- quiz generico ---------- */
+function quiz(el,Qs,done){delete el.dataset.lock;let i=0;(function show(){const q=Qs[i],o=shuf(q.o);
+ el.innerHTML=`<p class="qh">${q.h}</p>`+o.map((x,k)=>`<button class="opt" data-k="${k}">${x.t}</button>`).join("")+'<div class="fb hidden"></div>';
+ el.onclick=e=>{const b=e.target.closest(".opt");if(!b||b.disabled||el.dataset.lock)return;const x=o[+b.dataset.k],fb=el.querySelector(".fb");
+  b.disabled=true;fb.classList.remove("hidden");
+  if(x.ok){el.dataset.lock=1;b.classList.add("right");fb.className="fb g";fb.innerHTML="✔ "+x.e+`<p><button class="btn" id="nq">${i<Qs.length-1?"Avanti":"Continua"}</button></p>`;
+   fb.querySelector("#nq").onclick=()=>{delete el.dataset.lock;if(i<Qs.length-1){i++;show()}else done()}}
+  else{b.classList.add("wrong");fb.className="fb b";fb.innerHTML="✖ "+x.e}}})()}
+
+/* ---------- intro ---------- */
+const LOG=["Prima di sparire, Elia aveva una galleria di foto pubblica.","Qualcuno l’ha guardata con attenzione e ha usato quello che ha visto.","Il sistema ti chiede di ripulirla: foto, file, conversazioni e contatti.","Quattro lastre da sviluppare, prima che sia troppo tardi."];
+let li=0;(function nx(){if(li<LOG.length){const p=document.createElement("p");p.textContent=LOG[li++];$("log").appendChild(p);setTimeout(nx,1000)}else $("go0").classList.remove("hidden")})();
+$("go0").onclick=()=>go(1);
+
+/* ---------- sviluppo 1 · la foto con la lente ---------- */
+const PHOTO=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Arial,Helvetica,sans-serif">
+<defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9ec4e6"/><stop offset="1" stop-color="#ead9b6"/></linearGradient></defs>
+<rect width="800" height="500" fill="#cbbfa4"/><rect y="330" width="800" height="170" fill="#7a5a3c"/><rect y="326" width="800" height="8" fill="#5e432a"/>
+<rect x="40" y="40" width="230" height="210" fill="#e8e1d0" stroke="#fff" stroke-width="8"/><rect x="48" y="48" width="214" height="194" fill="url(#sk)"/>
+<path d="M48 232 L110 160 L165 205 L225 140 L262 190 L262 242 L48 242Z" fill="#6b7d6a"/>
+<rect x="116" y="165" width="78" height="42" fill="#f4f0e6"/><path d="M121 165 a34 22 0 0 1 68 0z" fill="#d9d4c7"/><text x="121" y="192" font-size="5.6" fill="#333">OSSERVATORIO</text><text x="121" y="199" font-size="5.6" fill="#333">MONTE CIECO</text>
+<path d="M155 48 V242 M48 145 H262" stroke="#fff" stroke-width="5"/>
+<rect x="310" y="45" width="110" height="122" fill="#fbfaf5" stroke="#aaa"/><rect x="310" y="45" width="110" height="20" fill="#b3261e"/><text x="338" y="59" font-size="10" fill="#fff" font-weight="bold">MARZO</text>
+<g stroke="#ddd"><path d="M310 85H420M310 105H420M310 125H420M347 65V135M384 65V135"/></g><circle cx="365" cy="115" r="9" fill="none" stroke="#b3261e" stroke-width="1.5"/>
+<text x="314" y="147" font-size="5.8" fill="#222">GIO 14: turno notte 22:00-06:00</text><text x="314" y="156" font-size="5.8" fill="#222">da sola in cupola</text>
+<rect x="450" y="160" width="250" height="160" rx="6" fill="#20242a"/><rect x="460" y="170" width="230" height="136" fill="#33475b"/>
+<rect x="470" y="180" width="120" height="86" fill="#e9eef3"/><text x="476" y="195" font-size="8" fill="#223">Archivio - accesso</text><text x="476" y="210" font-size="7" fill="#445">utente: e.marchetti</text><rect x="476" y="217" width="90" height="10" fill="#fff" stroke="#99a"/>
+<rect x="560" y="320" width="30" height="10" fill="#20242a"/><rect x="530" y="328" width="90" height="6" fill="#20242a"/>
+<g transform="rotate(-5 684 217)"><rect x="652" y="188" width="64" height="58" fill="#ffe36b"/><text x="657" y="206" font-size="6.2" fill="#553">pw archivio:</text><text x="657" y="220" font-size="8.5" fill="#553" font-weight="bold">briciola</text></g>
+<g transform="rotate(4 345 392)"><rect x="300" y="360" width="94" height="64" rx="5" fill="#fff" stroke="#999"/><rect x="300" y="360" width="94" height="16" fill="#2f5d3a"/><text x="306" y="371" font-size="6.5" fill="#fff">OSSERVATORIO</text><text x="306" y="390" font-size="8.5" fill="#222" font-weight="bold">E. MARCHETTI</text><text x="306" y="400" font-size="5.8" fill="#444">Resp. Archivio - int. 0546 55 21</text><path d="M306 408h82v10h-82z" fill="#333"/></g>
+<rect x="50" y="395" width="150" height="44" rx="5" fill="#2a2a2e"/><circle cx="170" cy="417" r="3" fill="#6f6"/><circle cx="182" cy="417" r="3" fill="#6f6"/><rect x="58" y="400" width="82" height="34" fill="#f2f2f2"/><text x="61" y="412" font-size="5.8" fill="#222">WiFi: OSSERVATORIO_MC</text><text x="61" y="422" font-size="5.8" fill="#222">pass: Luna-4471</text>
+<rect x="213" y="348" width="66" height="56" fill="#5e432a"/><rect x="219" y="354" width="54" height="44" fill="#f6e7c8"/><ellipse cx="246" cy="376" rx="14" ry="11" fill="#c9a06a"/><path d="M236 368l2-9 6 5zM256 368l-2-9-6 5z" fill="#c9a06a"/><text x="224" y="394" font-size="5.8" fill="#553">Briciola, 6 anni</text>
+<rect x="418" y="345" width="32" height="36" rx="4" fill="#d9d4c7"/><path d="M450 355q14 0 14 10t-14 10" fill="none" stroke="#d9d4c7" stroke-width="4"/>
+<rect x="730" y="318" width="44" height="44" fill="#a0583a"/><path d="M752 318q-30-40 -4-60M752 318q30-40 4-70M752 318q0-50 0-80" stroke="#3f7a3a" stroke-width="7" fill="none"/>
+<rect x="150" y="355" width="30" height="40" rx="3" fill="#8a8f98"/><path d="M158 355l-3-18M165 355l0-20M172 355l4-16" stroke="#222" stroke-width="3"/>
+</svg>`;
+const HS=[
+ {k:"sign",x:110,y:158,w:90,h:56,t:"🏔️ <b>La scritta sull’edificio</b> dalla finestra: rivela dove lavora Elia."},
+ {k:"cal",x:306,y:136,w:120,h:34,t:"📅 <b>Il calendario</b>: stanotte Elia è <b>da sola</b> in turno, dalle 22 alle 6. Un’informazione preziosa per chi vuole approfittarne."},
+ {k:"pw",x:648,y:184,w:74,h:66,t:"🟨 <b>Il post-it</b>: una password scritta in chiaro, leggibile in foto."},
+ {k:"badge",x:296,y:356,w:102,h:72,t:"🪪 <b>Il badge</b>: nome, cognome, ruolo e numero interno. Chi chiama può fingersi un collega."},
+ {k:"wifi",x:54,y:396,w:150,h:46,t:"📶 <b>L’etichetta del router</b>: nome e password del Wi-Fi dell’osservatorio."},
+ {k:"cat",x:211,y:346,w:70,h:60,t:"🐈 <b>La foto con il nome della gatta</b>: spesso è la risposta a una domanda segreta (lo hai visto nel Livello 2)."}];
+const DEC=[{x:416,y:343,w:36,h:40},{x:726,y:256,w:52,h:110},{x:148,y:335,w:36,h:62}];
+const PHOTO2=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Arial,Helvetica,sans-serif">
+<defs><linearGradient id="wd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9794c"/><stop offset="1" stop-color="#8a5f3c"/></linearGradient></defs>
+<rect width="800" height="500" fill="url(#wd)"/>
+<g stroke="#6f4a2d" stroke-width="3" opacity=".5"><path d="M0 78H800M0 168H800M0 258H800M0 348H800M0 438H800"/></g>
+<g stroke="#7a5233" stroke-width="1" opacity=".4"><path d="M120 0V500M260 0V500M410 0V500M560 0V500M700 0V500"/></g>
+
+<rect x="30" y="30" width="240" height="180" fill="#c9a878" stroke="#a5834f" stroke-width="2"/>
+<path d="M150 30V210" stroke="#b08d5b" stroke-width="6"/>
+<rect x="50" y="52" width="200" height="136" fill="#fff" stroke="#bbb"/>
+<text x="60" y="70" font-size="7" fill="#666">DESTINATARIO</text>
+<text x="60" y="88" font-size="11" font-weight="bold" fill="#111">Elia Marchetti</text>
+<text x="60" y="104" font-size="10" fill="#222">Via delle Rose 14</text>
+<text x="60" y="118" font-size="10" fill="#222">48018 Faenza (RA)</text>
+<text x="60" y="134" font-size="9" fill="#222">Tel. 347 55 21 908</text>
+<g fill="#111"><rect x="60" y="148" width="2" height="26"/><rect x="65" y="148" width="1" height="26"/><rect x="69" y="148" width="4" height="26"/><rect x="76" y="148" width="1" height="26"/><rect x="80" y="148" width="2" height="26"/><rect x="85" y="148" width="3" height="26"/><rect x="91" y="148" width="1" height="26"/><rect x="95" y="148" width="2" height="26"/><rect x="100" y="148" width="1" height="26"/><rect x="104" y="148" width="4" height="26"/></g>
+
+<g transform="rotate(-3 425 115)">
+<rect x="320" y="40" width="210" height="150" fill="#fdfcf7" stroke="#ccc"/>
+<text x="332" y="60" font-size="9" fill="#1b3f6e" font-weight="bold">BANCA DI FAENZA</text>
+<text x="332" y="74" font-size="7" fill="#555">Estratto conto · marzo</text>
+<text x="332" y="94" font-size="7" fill="#333">Intestatario: Elia Marchetti</text>
+<text x="332" y="116" font-size="8" fill="#111">IBAN IT60 X054 2811 1010</text>
+<text x="332" y="128" font-size="8" fill="#111">0000 0123 456</text>
+<text x="332" y="146" font-size="7" fill="#333">Saldo: 4.820,00 €</text>
+</g>
+
+<g transform="rotate(2 665 120)">
+<rect x="560" y="40" width="210" height="160" fill="#fff" stroke="#ddd"/>
+<rect x="560" y="40" width="210" height="22" fill="#e8f0f7"/>
+<text x="570" y="55" font-size="8" font-weight="bold" fill="#235">RICETTA MEDICA</text>
+<text x="570" y="78" font-size="7" fill="#444">Dott. L. Serra · Medicina</text>
+<text x="570" y="92" font-size="7" fill="#444">Paziente: Elia Marchetti</text>
+<text x="570" y="110" font-size="8" fill="#111">Farmaco: ansiolitico</text>
+<text x="570" y="124" font-size="7" fill="#444">1 compressa la sera</text>
+<text x="570" y="146" font-size="7" fill="#444">Data: 12/03</text>
+<text x="570" y="176" font-size="9" fill="#335" font-style="italic">firma</text>
+</g>
+
+<rect x="555" y="290" width="220" height="170" fill="#fff" stroke="#bbb"/>
+<rect x="555" y="290" width="220" height="26" fill="#b3261e"/>
+<text x="626" y="308" font-size="12" fill="#fff" font-weight="bold">AGOSTO</text>
+<text x="560" y="334" font-size="6" fill="#666">L   M   M   G   V   S   D</text>
+<g stroke="#e2e2e2"><path d="M555 340H775M555 370H775M555 400H775M555 430H775"/><path d="M610 316V460M665 316V460M720 316V460"/></g>
+<rect x="612" y="372" width="103" height="26" fill="#ffe36b" opacity=".85"/>
+<text x="616" y="389" font-size="8" font-weight="bold" fill="#6a4b00">14–18 VACANZA</text>
+
+<g>
+<circle cx="110" cy="358" r="12" fill="none" stroke="#9aa2ad" stroke-width="6"/>
+<path d="M110 370v42h10v-8h8v8h10v-42" fill="none" stroke="#9aa2ad" stroke-width="6"/>
+<rect x="140" y="378" width="54" height="30" rx="4" fill="#d8c48e" stroke="#a58c52"/>
+<text x="147" y="397" font-size="8" fill="#553" font-weight="bold">CASA</text>
+</g>
+
+<circle cx="340" cy="390" r="34" fill="#fff" stroke="#ccc"/><circle cx="340" cy="390" r="24" fill="#6b4423"/>
+<path d="M374 380q18 0 18 14t-18 14" fill="none" stroke="#ddd" stroke-width="6"/>
+<rect x="445" y="382" width="80" height="54" rx="6" fill="#b9744f"/>
+<path d="M485 382q-40-30-10-70M485 382q40-30 10-70M485 382q0-55 0-82" stroke="#3f7a3a" stroke-width="8" fill="none"/>
+<path d="M320 265a45 45 0 0 1 90 0" fill="none" stroke="#333" stroke-width="9"/>
+<rect x="312" y="260" width="18" height="34" rx="8" fill="#333"/><rect x="400" y="260" width="18" height="34" rx="8" fill="#333"/>
+</svg>`;
+const HS2=[
+ {k:"addr",x:48,y:50,w:204,h:140,t:"📦 <b>L’etichetta del pacco</b>: nome, indirizzo di casa e numero di telefono. Bastano per sapere dove abiti e come contattarti."},
+ {k:"bank",x:316,y:36,w:218,h:158,t:"🏦 <b>La lettera della banca</b>: IBAN e saldo. Sono dati che nessuno deve vedere in una foto."},
+ {k:"med",x:556,y:36,w:218,h:168,t:"💊 <b>La ricetta medica</b>: nome, medico e terapia. I dati sulla salute sono tra i più delicati."},
+ {k:"hol",x:551,y:286,w:228,h:178,t:"📅 <b>Il calendario</b>: “14–18 agosto vacanza”. Dice esattamente quando la casa resta vuota."},
+ {k:"keys",x:56,y:336,w:144,h:86,t:"🔑 <b>Le chiavi con il portachiavi “CASA”</b>: insieme all’indirizzo sull’etichetta dicono quale porta aprono e dove."}];
+const DEC2=[{x:296,y:348,w:100,h:92},{x:440,y:292,w:90,h:148},{x:286,y:206,w:150,h:100}];
+
+const PHOTOS=[
+ {svg:PHOTO,hs:HS,dec:DEC,n:6,
+  txt:'Questa foto è ancora online nella galleria pubblica di Elia. Muovi la <b>lente</b> sulla foto (col dito o col mouse) e tocca i <b>6 dettagli rischiosi</b>. Attenzione: non tutto è un problema.',
+  done:()=>{quiz($("q1"),[
+   {h:"Perché dettagli che sembrano innocui sono un problema se messi insieme?",o:[
+    {t:"Perché dicono chi sei, dove lavori, quando sei sola e come entrare nei tuoi account: bastano per costruire una truffa credibile.",ok:1,e:"Esatto. Ogni dettaglio è un pezzo di puzzle: un truffatore li mette insieme per sembrare un collega o per indovinare le tue risposte segrete."},
+    {t:"Perché la foto risulta di bassa qualità.",e:"La qualità non c’entra: il problema sono le informazioni che si leggono."},
+    {t:"Perché i social cancellano le foto con troppi dettagli.",e:"I social non controllano questo: sei tu a dover guardare lo sfondo."}]},
+   {h:"Cosa fai prima di pubblicare una foto scattata in ufficio?",o:[
+    {t:"Controllo lo sfondo e tolgo o copro badge, post-it, schermi, calendari e documenti.",ok:1,e:"Esatto. Basta spostare un oggetto o scattare da un’altra angolazione. E mai scrivere una password su un post-it."},
+    {t:"Niente: tanto nessuno ingrandisce le foto.",e:"Chi vuole truffarti lo fa proprio: ingrandire è il primo passo."},
+    {t:"La pubblico solo agli amici e basta.",e:"Gli amici possono salvarla o condividerla: la regola vale per tutti i destinatari."}]}
+  ],()=>{
+   $("q1").innerHTML='<div class="fb g">✔ Prima foto ripulita. Ora guarda l’altra foto della galleria: anche una foto scattata a casa può rivelare molto.</div><p><button class="btn" id="ph2">Guarda la seconda foto</button></p>';
+   $("ph2").onclick=()=>{psi=1;startPhoto()};
+  })}},
+ {svg:PHOTO2,hs:HS2,dec:DEC2,n:5,
+  txt:'La seconda foto è stata scattata sulla scrivania di casa. Anche qui ci sono dettagli da non pubblicare: tocca i <b>5 dettagli rischiosi</b>. Attenzione: non tutto è un problema.',
+  done:()=>{quiz($("q1"),[
+   {h:"La seconda foto non mostra il luogo di lavoro. Perché è comunque rischiosa?",o:[
+    {t:"Perché mostra indirizzo, telefono, banca, salute e quando la casa resta vuota: sono dati che valgono anche fuori dal lavoro.",ok:1,e:"Esatto. Una foto di casa può dire dove abiti, come contattarti e quando non c’è nessuno: informazioni utili per una truffa o un furto."},
+    {t:"Perché è scattata con poca luce.",e:"La luce non c’entra: il problema sono le informazioni leggibili sugli oggetti."},
+    {t:"Perché non c’è Elia nella foto.",e:"L’assenza di persone non rende la foto sicura: contano gli oggetti e i documenti che si vedono."}]},
+   {h:"Hai trovato le chiavi accanto all’etichetta con l’indirizzo. Qual è il rischio?",o:[
+    {t:"Chi vede la foto sa dove abiti e che quelle chiavi aprono quella porta: meglio non mostrare né le chiavi né l’indirizzo.",ok:1,e:"Esatto. Indirizzo e chiavi insieme dicono dove andare e cosa serve per entrare: non vanno mai pubblicati."},
+    {t:"Nessun rischio: le chiavi non si riconoscono.",e:"Le chiavi si riconoscono benissimo, e accanto c’è l’indirizzo completo: è proprio il collegamento a essere pericoloso."},
+    {t:"Basta togliere il portachiavi: la foto è sicura.",e:"Togliere il portachiavi non cancella l’indirizzo sull’etichetta del pacco: il collegamento con le chiavi resta."}]}
+  ],()=>{pola(0);$("t2").classList.contains("on")||go(2);startMeta()})}}
+];
+const found=new Set();let psi=0,phBound=false;
+function startPhoto(){
+ const P=PHOTOS[psi],ph=$("ph");
+ found.clear();$("clues").innerHTML="";$("q1").innerHTML="";ph.style.pointerEvents="";
+ ph.innerHTML=P.svg.replace(' width="800" height="500"',"")+'<div class="lens" id="lens"></div>';
+ $("ptxt").innerHTML=P.txt;$("cnt").textContent="Dettagli rischiosi trovati: 0/"+P.n;
+ const svg=ph.querySelector("svg");
+ window.pickAt=(x,y)=>{const h=P.hs.find(h=>x>=h.x&&x<=h.x+h.w&&y>=h.y&&y<=h.y+h.h);
+  if(h){if(found.has(h.k))return;found.add(h.k);const c=document.createElementNS("http://www.w3.org/2000/svg","ellipse");
+   c.setAttribute("cx",h.x+h.w/2);c.setAttribute("cy",h.y+h.h/2);c.setAttribute("rx",h.w/2+4);c.setAttribute("ry",h.h/2+4);c.setAttribute("fill","none");c.setAttribute("stroke","#e0281a");c.setAttribute("stroke-width","3");svg.appendChild(c);
+   const d=document.createElement("div");d.innerHTML=h.t;$("clues").appendChild(d);$("cnt").textContent="Dettagli rischiosi trovati: "+found.size+"/"+P.n;
+   if(found.size===P.n)allFound()}
+  else if(P.dec.some(h=>x>=h.x&&x<=h.x+h.w&&y>=h.y&&y<=h.y+h.h)){flash("Qui non c’è niente di rischioso: non tutto è un indizio.")}};
+ const flash=m=>{const d=document.createElement("div");d.innerHTML=m;d.style.background="#eee";d.style.borderColor="#999";$("clues").appendChild(d);setTimeout(()=>d.remove(),2200)};
+ if(phBound)return;
+ phBound=true;
+ const rel=e=>{const r=ph.getBoundingClientRect(),bw=10;return {px:e.clientX-r.left-bw,py:e.clientY-r.top-bw,W:r.width-2*bw,H:r.height-2*bw}};
+ const lens=e=>{const L=$("lens");if(!L)return;const {px,py,W,H}=rel(e);if(px<0||py<0||px>W||py>H){L.style.display="none";return}
+  const uri='url("data:image/svg+xml;charset=utf-8,'+encodeURIComponent(PHOTOS[psi].svg)+'")',Z=3.2,D=140;
+  const off=e.pointerType==="touch"?-90:0;L.style.display="block";L.style.left=(px+10-D/2)+"px";L.style.top=(py+10-D/2+off)+"px";
+  L.style.backgroundImage=uri;L.style.backgroundSize=(W*Z)+"px "+(H*Z)+"px";L.style.backgroundPosition=(-(px*Z-D/2))+"px "+(-(py*Z-D/2))+"px"};
+ ph.addEventListener("pointermove",lens);
+ ph.addEventListener("pointerdown",e=>{lens(e);const {px,py,W,H}=rel(e);window.pickAt(px/W*800,py/H*500)});
+ ph.addEventListener("pointerleave",()=>{const L=$("lens");if(L)L.style.display="none"});ph.addEventListener("pointerup",e=>{if(e.pointerType==="touch"){const L=$("lens");if(L)L.style.display="none"}})}
+function allFound(){const P=PHOTOS[psi];$("ph").style.pointerEvents="none";$("lens").style.display="none";P.done()}
+$("go0").addEventListener("click",startPhoto);
+
+/* ---------- sviluppo 2 · metadati ---------- */
+const FIELDS=[
+ {k:"Posizione GPS",v:"44.2856° N, 11.8832° E",r:1,spy:"📍 <b>Dove:</b> a Faenza, a pochi metri dal punto dello scatto.",why:"dice dove è stata scattata la foto, con precisione di pochi metri."},
+ {k:"Data e ora dello scatto",v:"14 marzo, 23:48",r:1,spy:"🕒 <b>Quando:</b> giovedì notte, tardi: Elia è in turno e probabilmente sola.",why:"rivela quando sei lì e quali sono le tue abitudini."},
+ {k:"Autore",v:"Elia Marchetti",r:1,spy:"👤 <b>Chi:</b> Elia Marchetti, nome e cognome.",why:"collega la foto al tuo nome vero."},
+ {k:"Numero di serie del telefono",v:"SN-7F2K9Q",r:1,spy:"📱 <b>Telefono riconoscibile:</b> SN-7F2K9Q, utile per collegare tutte le sue foto.",why:"identifica il tuo dispositivo e permette di collegare foto diverse alla stessa persona."},
+ {k:"Miniatura incorporata",v:"foto intera",r:1,spy:"🖼️ <b>Anteprima:</b> contiene ancora la foto non ritagliata.",why:"anche se ritagli la foto, la miniatura può mostrare ancora l’originale intero."},
+ {k:"Dimensioni",v:"4032 × 3024",r:0},{k:"Formato",v:"JPEG",r:0},{k:"Orientamento",v:"orizzontale",r:0}];
+const DEST=[
+ {t:"Foto 1 · Il nuovo profilo pubblico",who:"chiunque su Internet",need:[],req:"La foto andrà sul profilo pubblico: nessun destinatario ha bisogno di dati nascosti."},
+ {t:"Foto 2 · Il concorso fotografico",who:"la giuria e il pubblico del concorso",need:[1,2],req:"Il regolamento chiede di lasciare l’<b>autore</b> (per i crediti) e la <b>data</b> dello scatto. Tutto il resto non serve."},
+ {t:"Foto 3 · L’archivio interno dell’osservatorio",who:"i colleghi, in rete privata",need:[0,1],req:"L’archivio cataloga le foto per luogo e data: servono <b>posizione GPS</b> e <b>data</b>. Tutto il resto non serve."}];
+let di=0;const rem=new Set();let m1=false;
+function spy(){const left=FIELDS.map((f,i)=>({f:f,i:i})).filter(x=>!rem.has(x.i)&&x.f.spy);
+ $("spy").innerHTML="<div><b>🔎 Cosa vede chi riceve il file</b></div>"+(left.length?left.map(x=>"<div>"+x.f.spy+"</div>").join(""):"<div>Nessun dato nascosto: resta solo l’immagine.</div>")}
+function drawMeta(){const D=DEST[di];rem.clear();$("dt").innerHTML=`<div class="note"><b>${D.t}</b> (${di+1}/${DEST.length})<br>Destinatari: ${D.who}.<br>${D.req}</div>`;
+ $("meta").innerHTML="<tr><td></td><td></td><td>Rimuovi</td></tr>"+FIELDS.map((f,i)=>`<tr><td>${f.k}</td><td class="kv">${f.v}</td><td><input type="checkbox" class="chk" data-i="${i}" aria-label="Rimuovi ${f.k}"></td></tr>`).join("");
+ spy();$("f2").innerHTML="";$("pub").disabled=false}
+function startMeta(){if(m1)return;m1=true;di=0;drawMeta()}
+$("meta").onchange=e=>{const c=e.target.closest(".chk");if(!c)return;c.checked?rem.add(+c.dataset.i):rem.delete(+c.dataset.i);spy()};
+$("pub").onclick=()=>{const D=DEST[di];const missing=D.need.filter(i=>rem.has(i));const left=FIELDS.map((f,i)=>i).filter(i=>FIELDS[i].r&&!D.need.includes(i)&&!rem.has(i));
+ if(missing.length||left.length){let h="";if(missing.length)h+="• Hai tolto <b>"+missing.map(i=>FIELDS[i].k).join(", ")+"</b>, ma serve al destinatario: senza, la foto non può essere usata.<br>";
+  if(left.length)h+=left.map(i=>"• <b>"+FIELDS[i].k+"</b> è ancora dentro: "+FIELDS[i].why).join("<br>");
+  $("f2").innerHTML='<div class="fb b">✖ La foto non è pronta.<br>'+h+'</div>';return}
+ $("pub").disabled=true;
+ if(di<DEST.length-1){$("f2").innerHTML='<div class="fb g">✔ Foto pronta: hai lasciato solo ciò che serve a questo destinatario.<p><button class="btn" id="nx2">Prossima foto</button></p></div>';$("nx2").onclick=()=>{di++;drawMeta()};return}
+ $("f2").innerHTML='<div class="fb g">✔ Tre foto pronte. La regola: <b>ogni destinatario riceve solo i dati che gli servono</b>, mai di più.</div>';
+ startAdv2();};
+const STEPS=[
+ {t:"Apri le proprietà del file e controlla quali metadati contiene.",h:"È il primo passo: prima di togliere qualcosa devi sapere cosa c’è nel file."},
+ {t:"Togli posizione, data, autore, numero di serie e miniatura.",h:"Va fatto prima di salvare la copia: altrimenti anche la copia conserva i dati."},
+ {t:"Salva una copia pulita con un nome nuovo, senza sovrascrivere l’originale.",h:"Va dopo la rimozione: la copia deve nascere già senza metadati, e l’originale resta intatto."},
+ {t:"Controlla l’anteprima e lo sfondo prima di condividere.",h:"Va dopo aver salvato la copia e prima di pubblicare: è l’ultimo controllo."},
+ {t:"Pubblica o invia la copia pulita.",h:"È l’ultimo passo: si pubblica solo dopo aver controllato la copia."}];
+let ord=[],adv2Done=false;
+function shuffleOrder(){ord=shuf(STEPS.map((s,i)=>i));if(ord.every((v,i)=>v===i))ord.push(ord.shift())}
+function startAdv2(){
+ if(adv2Done)return;adv2Done=true;shuffleOrder();
+ const box=$("adv2");box.classList.remove("hidden");
+ box.innerHTML=`<h3 class="qh">La sequenza giusta · Dal file alla pubblicazione</h3>
+  <p>Elia ha ritagliato la foto e crede di aver finito. Ma il ritaglio toglie il badge dall’immagine, <b>non i metadati</b>: posizione, data, autore, numero di serie e miniatura restano nel file.</p>
+  <p>Metti in ordine le mosse per pubblicare la foto senza dati nascosti. Usa le frecce <b>▲ ▼</b> per spostare ogni mossa.</p>
+  <div id="ord"></div>
+  <p><button class="btn" id="ok2">Controlla la sequenza</button></p>
+  <div id="fa2"></div>`;
+ drawOrd();$("ok2").onclick=checkOrd;
+ box.onclick=e=>{const b=e.target.closest("button[data-mv]");if(!b)return;
+  const pos=+b.closest(".step").dataset.pos,nv=pos+ +b.dataset.mv;
+  if(nv<0||nv>=ord.length)return;
+  [ord[pos],ord[nv]]=[ord[nv],ord[pos]];$("fa2").innerHTML="";drawOrd()};
+}
+function drawOrd(){
+ $("ord").innerHTML=ord.map((v,pos)=>`<div class="step" data-pos="${pos}"><span class="num">${pos+1}</span><b>${STEPS[v].t}</b><span class="mv"><button type="button" data-mv="-1" ${pos===0?"disabled":""} aria-label="Sposta su">▲</button><button type="button" data-mv="1" ${pos===ord.length-1?"disabled":""} aria-label="Sposta giù">▼</button></span></div>`).join("");
+}
+function checkOrd(){
+ const rows=[...$("ord").querySelectorAll(".step")];
+ let wrong=[];
+ rows.forEach((row,pos)=>{const ok=ord[pos]===pos;row.classList.remove("ok","bad");row.classList.add(ok?"ok":"bad");
+  let why=row.querySelector(".why");
+  if(ok){if(why)why.remove();return}
+  wrong.push(pos);
+  if(!why){why=document.createElement("small");why.className="why";row.appendChild(why)}
+  why.textContent=STEPS[ord[pos]].h;
+ });
+ if(wrong.length){
+  $("fa2").innerHTML=`<div class="fb b">✖ Ci sono ancora ${wrong.length} mosse fuori posto: quelle in rosso. ${STEPS[ord[wrong[0]]].h}</div>`;
+  return;
+ }
+ $("fa2").innerHTML=`<div class="fb g">✔ Sequenza corretta: prima si controlla il file, poi si tolgono i metadati, si salva una copia pulita, si verifica l’anteprima e solo alla fine si pubblica.<p><button class="btn" id="goq2">Passa alle domande</button></p></div>`;
+ $("goq2").onclick=startQ2;
+}
+function startQ2(){quiz($("q2"),[
+  {h:"Cosa fai prima di pubblicare la foto?",o:[
+   {t:"Tolgo i metadati dalle proprietà del file o dalle opzioni di condivisione, poi controllo l’anteprima.",ok:1,e:"Esatto. Il ritaglio non basta: i metadati vanno tolti dal file prima di condividerlo."},
+   {t:"La salvo di nuovo come JPEG: così i metadati spariscono.",e:"Un JPEG può contenere comunque i metadati EXIF: cambiare formato non li cancella."},
+   {t:"La rimpicciolisco: i metadati non ci stanno più.",e:"Le dimensioni non c’entrano: i metadati restano anche in un file piccolo."}]},
+  {h:"Una foto caricata su un social ha sempre i metadati?",o:[
+   {t:"Dipende: alcune piattaforme li tolgono, altre no, e se mandi il file originale restano. Conviene toglierli prima.",ok:1,e:"Esatto. Non ci si può affidare al social: la pulizia si fa prima di condividere."},
+   {t:"No, i social li cancellano sempre.",e:"Non è garantito: dipende dalla piattaforma e da come condividi il file (per esempio via email o chat come documento)."},
+   {t:"Sì, e non si possono togliere in nessun modo.",e:"Si possono togliere: dalle impostazioni della fotocamera, dalle opzioni di condivisione o dalle proprietà del file."}]},
+  {h:"Nella foto per l’archivio interno hai lasciato posizione e data. Perché non andava tolto tutto?",o:[
+   {t:"Perché a quel destinatario servono per catalogare le foto: si tolgono i dati inutili, non quelli necessari.",ok:1,e:"Esatto. Il principio è dare solo ciò che serve: né tutto, né niente."},
+   {t:"Perché i metadati sono sempre sicuri sulla rete privata.",e:"Non lo sono sempre: anche in una rete privata conviene limitare i dati a quelli necessari."},
+   {t:"Perché la foto senza metadati non si apre.",e:"Una foto si apre anche senza metadati: cambia solo cosa si può sapere su di essa."}]}
+ ],()=>{pola(1);go(3);startCall()})}
+
+/* ---------- sviluppo 3 · conversazioni ---------- */
+const SCEN=[
+ {t:"la telefonata del “tecnico”",who:"Chiamante",intro:"Giovedì notte, ore 23:40. Elia è sola in osservatorio e riceve una telefonata. Ricostruiscila.",debrief:"Il chiamante ha usato tre leve: informazioni vere prese dalla foto (turno, router), urgenza e minaccia. Ogni risposta giusta ne ha smontata una.",turns:[
+  {c:"Buonasera dottoressa Marchetti, sono Marco dell’assistenza tecnica. Vedo che stanotte è <b>da sola</b> in turno e il router dell’osservatorio ha un’anomalia.",l:"informazioni vere (dalla foto del calendario)",o:[
+   {t:"«Non la conosco. Mi dica il nome della società: verifico io e la richiamo.»",ok:1,m:"Chiedere chi è e verificare è l’inizio giusto. Sapere del turno di Elia non lo rende credibile: l’ha visto nella sua foto."},
+   {t:"«Sì, sono io. Dica pure.»",m:"Confermando chi sei e che sei sola, dai al truffatore proprio ciò che gli serve."},
+   {t:"«Mi dica cosa serve, così risolviamo subito.»",m:"Collaborare subito gli dà fiducia e tempo per costruire la storia."}]},
+  {c:"Non c’è tempo da perdere: l’archivio andrà perso entro mezz’ora. Mi legga la password del Wi-Fi, è scritta sull’etichetta del router.",l:"urgenza + informazione vera (etichetta)",o:[
+   {t:"«Le password non si dicono per telefono. Chiudo e richiamo io il numero ufficiale.»",ok:1,m:"Perfetto: nessuna password al telefono e sei tu a scegliere il canale per verificare."},
+   {t:"«La leggo: l’etichetta è sul router.»",m:"Ora il truffatore entra nella rete dell’osservatorio. L’etichetta in foto gli aveva già dato la prova di essere informato."},
+   {t:"«Le dico solo le prime lettere, poi controlliamo.»",m:"Anche metà password aiuta chi vuole entrare: non si dà nemmeno una parte."}]},
+  {c:"Se riattacca, il suo responsabile saprà che ha ignorato un’emergenza e ne risponderà lei!",l:"minaccia (autorità)",o:[
+   {t:"«Chiudo. Se è un’emergenza vera la verificherò al numero ufficiale.»",ok:1,m:"Davanti a pressione e minacce, ci si ferma e si verifica. È proprio la fretta la leva del truffatore."},
+   {t:"«Va bene, ma solo la password della rete ospiti.»",m:"Anche la sola rete “ospiti” è una porta d’ingresso. Una concessione piccola è già troppo."},
+   {t:"«Allora le passo il codice che mi è arrivato per SMS.»",m:"Quel codice autorizza l’accesso all’account di Elia. Nessun tecnico lo chiede mai."}]},
+   {c:"Va bene, allora mi faccia almeno un favore: mi confermi il nome del suo responsabile e il suo numero interno. Lo chiamo io.",l:"richiesta di informazioni interne",o:[
+    {t:"«Il numero interno non lo do. Se serve, la richiamo io al centralino ufficiale.»",ok:1,m:"Giusto: i dati dei colleghi e i numeri interni non si danno a chi non è verificato. Sei tu a richiamare, non lui."},
+    {t:"«Certo: è il dott. Bianchi, interno 0546.»",m:"Nome e interno permettono al truffatore di fingersi un collega e di ottenere fiducia dalla persona sbagliata."},
+    {t:"«Le passo il centralino, ma non dica che l’ho chiamata.»",m:"Chiedere segretezza è un campanello d’allarme: una richiesta vera non ha bisogno di nascondersi."}]}]},
+ {t:"il messaggio della “giornalista”",who:"Giulia (profilo nuovo)",intro:"Lunedì, in chat privata sul social. Un profilo appena creato scrive a Elia. Ricostruisci la conversazione.",debrief:"Una falsa giornalista usa la fiducia (complimenti), poi chiede informazioni sul luogo e infine una foto del badge: ogni richiesta serve a preparare l’ingresso fisico o digitale.",turns:[
+  {c:"Ciao Elia, sono Giulia, giornalista di una rivista di astronomia. Ho visto la tua galleria: bellissima! Sto scrivendo un pezzo sugli osservatori di montagna.",l:"fiducia (complimenti)",o:[
+   {t:"«Grazie! Mandami la richiesta ufficiale per email da un indirizzo della rivista: poi ne parliamo.»",ok:1,m:"Giusto: non sai chi è, e le richieste vere passano da canali ufficiali verificabili."},
+   {t:"«Grazie! Chiedimi pure quello che vuoi.»",m:"Rispondere con entusiasmo apre la porta: ora lei sa che Elia risponde e racconta."},
+   {t:"«Di quale rivista sei? Ti lascio il mio numero.»",m:"Dare il numero a una sconosciuta le permette di contattarla fuori dal social, dove è più difficile controllare."}]},
+  {c:"Perfetto! Mi servirebbe una foto dell’interno della cupola con te e la posizione esatta dell’ingresso: puoi mandarmela dall’app?",l:"richiesta di informazioni (posizione, interno)",o:[
+   {t:"«Le foto per la stampa le gestisce l’ufficio comunicazione. Posizione e interni non li condivido.»",ok:1,m:"Perfetto: rimandi all’ufficio competente e non dai né luogo né immagini dell’interno."},
+   {t:"«Ecco la posizione dall’app.»",m:"Così le dai l’indirizzo preciso. Dove lavora una persona è un dato da non regalare."},
+   {t:"«Ti mando una foto dell’interno, la posizione è sul mio profilo.»",m:"Una foto dell’interno mostra schermi, badge e porte: informazioni preziose per chi vuole entrare."}]},
+  {c:"Dai, non fare la difficile, ho una scadenza stasera! Mandami solo una foto del tuo badge per dimostrare chi sei, e ti metto in contatto con il mio direttore.",l:"urgenza + richiesta ribaltata",o:[
+   {t:"«No: non mando foto del badge a persone che non conosco. Chiudo la conversazione.»",ok:1,m:"Giusto: è lei che deve dimostrare chi è, non Elia. Il badge contiene nome, ruolo e numero interno."},
+   {t:"«Ecco il badge, ma ho coperto il numero.»",m:"Nome, cognome e ruolo bastano per fingersi un collega al telefono."},
+   {t:"«Dimmi prima il tuo numero di tessera da giornalista.»",m:"Sembra prudente, ma tiene viva la conversazione: un truffatore inventa un numero in un secondo. Meglio chiudere."}]},
+   {c:"Ultima cosa: mi mandi l’elenco dei tuoi colleghi con i turni? Così cito le fonti con precisione.",l:"richiesta di dati sui colleghi",o:[
+    {t:"«No: i dati dei colleghi non li condivido. Se serve, scriva all’ufficio comunicazione.»",ok:1,m:"Giusto: i nomi e i turni dei colleghi sono dati personali e informazioni utili per preparare un ingresso."},
+    {t:"«Te lo mando, tanto sono informazioni interne.»",m:"Proprio perché sono interne, non vanno condivise con una sconosciuta che non hai verificato."},
+    {t:"«Ti do solo i nomi, senza i turni.»",m:"Anche i soli nomi aiutano a fingersi un collega o a preparare una richiesta credibile."}]}]},
+ {t:"il messaggio della “banca”",who:"Banca di Faenza (numero sconosciuto)",intro:"Martedì mattina. Elia riceve un SMS da un numero sconosciuto che dice di essere la sua banca. Ricostruisci la conversazione.",debrief:"La finta banca usa dati veri presi dalle foto: nome e IBAN dalla lettera, indirizzo dal pacco, ferie dal calendario. I dati veri non sono una prova: si verifica solo dal canale ufficiale.",turns:[
+  {c:"Gentile Elia Marchetti, siamo la Banca di Faenza. Abbiamo bloccato un bonifico di 1.850 € dal conto che termina con 456. Se non lo riconosce, ci confermi i dati entro stasera.",l:"autorità + dati veri (dalla lettera della banca)",o:[
+   {t:"«Non rispondo al messaggio: chiamo io il numero sul retro della carta o entro nell’app della banca.»",ok:1,m:"Giusto: i dati veri non rendono il messaggio autentico. Il controllo si fa sul canale ufficiale che scegli tu."},
+   {t:"«Sì, quel bonifico non l’ho fatto: come lo blocco?»",m:"Rispondere conferma che i dati sono corretti e apre la strada alla richiesta successiva."},
+   {t:"«La mia banca non manda SMS: ignoro.»",m:"Ignorare è meglio che rispondere, ma molte banche avvisano davvero via SMS: la cosa sicura è verificare sul canale ufficiale, non fidarsi del messaggio."}]},
+  {c:"Per bloccare il bonifico ci serve un codice di conferma. Glielo inviamo per SMS: ce lo riscriva qui insieme al codice fiscale, per la pratica.",l:"richiesta di un codice + dati personali",o:[
+   {t:"«Nessun codice si condivide in chat o per SMS. Blocco l’operazione dall’app con il mio accesso.»",ok:1,m:"Esatto: quel codice serve a confermare un’operazione. Se lo dai a qualcun altro, autorizzi tu il movimento."},
+   {t:"«Le do il codice fiscale, ma non il codice SMS.»",m:"Anche il codice fiscale serve a completare una pratica bancaria: non si dà a un contatto non verificato."},
+   {t:"«Ecco il codice che mi è arrivato.»",m:"Con quel codice il truffatore autorizza il bonifico al posto di Elia."}]},
+  {c:"Per sicurezza le abbiamo inviato un link: acceda e confermi l’identità. Ha 15 minuti, poi il bonifico parte comunque.",l:"urgenza + link",o:[
+   {t:"Non apro il link: entro nell’app ufficiale della banca e controllo i movimenti.",ok:1,m:"Perfetto: il link non si apre. I movimenti si controllano solo dall’app o dal sito ufficiale."},
+   {t:"«Clicco, ma solo per vedere.»",m:"Anche aprire il link può bastare: può portare a una pagina falsa che cattura i dati o installare qualcosa."},
+   {t:"«Lo apro dal computer: è più sicuro.»",m:"Il dispositivo non rende sicuro il link: è il link a essere falso."}]},
+  {c:"Va bene, allora mi confermi almeno l’indirizzo: Via delle Rose 14, Faenza? Le inviamo la pratica a casa. E ci dica quando parte per le ferie, così blocchiamo tutto prima.",l:"dati veri (indirizzo e ferie dalle foto)",o:[
+   {t:"«Non confermo né indirizzo né date. Se serve, vado allo sportello o chiamo il numero ufficiale.»",ok:1,m:"Giusto: il truffatore ha già indirizzo e periodo delle ferie, e la sua conferma gli direbbe che la casa resterà vuota."},
+   {t:"«Sì, Via delle Rose 14. Parto il 14 agosto.»",m:"Così confermi dove abiti e quando non ci sarà nessuno: sono proprio le informazioni che servono per un furto."},
+   {t:"«L’indirizzo sì, le date no.»",m:"Anche solo l’indirizzo, unito alle altre informazioni, basta per completare il quadro."}]}]},
+ {t:"l’SMS del “corriere”",who:"Corriere (numero sconosciuto)",intro:"Mercoledì pomeriggio. Elia riceve un SMS da un numero sconosciuto: parla di un pacco indirizzato a casa sua. Ricostruisci la conversazione.",debrief:"Il finto corriere usa indirizzo e telefono letti sull’etichetta del pacco e le date delle ferie. La consegna si verifica solo sull’app o sul sito ufficiale: nessun corriere chiede dati della carta via SMS.",turns:[
+  {c:"Buongiorno, siamo il corriere. Abbiamo un pacco per Elia Marchetti in Via delle Rose 14. Non trovando nessuno, lo abbiamo messo in giacenza: per riprogrammare paghi 1,99 € qui.",l:"dati veri (nome e indirizzo dall’etichetta) + link",o:[
+   {t:"Non clicco: controllo il tracking sull’app ufficiale del corriere, cercando la spedizione.",ok:1,m:"Giusto: il link non si apre. Nome e indirizzo li ha letti sull’etichetta, non provano che il messaggio sia vero."},
+   {t:"«Pago subito, sono solo 2 euro.»",m:"La cifra piccola serve a farti abbassare la guardia: il link porta a un sito falso che chiede i dati della carta."},
+   {t:"«Apro il link ma non pago.»",m:"Anche solo aprire il link può bastare per raccogliere dati o portarti su una pagina truffa."}]},
+  {c:"Per la riconsegna ci servono i dati della carta e il numero di telefono. Il suo è 347 55 21 908, giusto?",l:"dati veri (telefono dall’etichetta) + dati di pagamento",o:[
+   {t:"«Non inserisco dati della carta via SMS. E il numero non lo confermo: verifico sull’app ufficiale.»",ok:1,m:"Giusto: il telefono è già sull’etichetta, e nessun corriere serio chiede la carta via SMS."},
+   {t:"«Sì, è il mio numero. Inserisco la carta.»",m:"Confermare il telefono dà credibilità alla truffa e i dati della carta possono essere usati subito."},
+   {t:"«Le do solo il numero della carta, senza il codice di sicurezza.»",m:"Anche il solo numero è prezioso: può bastare per addebiti o per completare la truffa."}]},
+  {c:"Se non conferma entro 10 minuti il pacco torna al mittente. E se parte per le ferie del 14, lo perderà: paghi il doppio al ritorno.",l:"scadenza + dati veri (ferie dal calendario)",o:[
+   {t:"«Nessuna fretta: controllo io il tracking. Le ferie non c’entrano con una consegna.»",ok:1,m:"Giusto: la scadenza è una pressione e le date delle ferie le ha viste sul calendario in foto."},
+   {t:"«Va bene, faccio tutto subito.»",m:"La fretta è la leva: ti fa agire prima di controllare. Un corriere vero non minaccia di raddoppiare una spesa via SMS."},
+   {t:"«Chiamo il numero che c’è nell’SMS.»",m:"Quel numero è del truffatore: chiamarlo significa parlare proprio con chi vuole ingannarti."}]}]},
+ {t:"il messaggio del “cugino”",who:"Cugino Marco (numero nuovo)",intro:"Mercoledì sera. Un numero sconosciuto scrive su WhatsApp dicendo di essere il cugino Marco. Ricostruisci la conversazione.",debrief:"Il finto parente usa il nome della gatta, le date delle ferie e l’indirizzo trovati nelle foto. La difesa è verificare con una domanda che solo il vero Marco sa e richiamare il numero che già conosci.",turns:[
+  {c:"Ciao Eli, sono Marco, tuo cugino. Ho cambiato numero. Ho saputo che partite il 14: ti va se passo io a dare da mangiare a Briciola mentre siete via?",l:"fiducia + dati veri (gatta e ferie dalle foto)",o:[
+   {t:"«Ciao. Se sei davvero Marco, dimmi una cosa che solo noi sappiamo. Intanto ti richiamo sul vecchio numero.»",ok:1,m:"Giusto: il nome della gatta e le date sono in foto, non prove. Verifichi con una domanda personale e richiami il numero che conosci."},
+   {t:"«Che bello, sì! Ti lascio le chiavi.»",m:"Dare le chiavi a un numero nuovo significa consegnare la casa a chi ha solo letto le tue foto."},
+   {t:"«Come sai della gatta e delle ferie?»",m:"Chiedere è naturale, ma lui ha una risposta pronta: la conversazione resta aperta. Meglio verificare su un altro canale."}]},
+  {c:"Perfetto, allora mi servono l’indirizzo esatto e il codice del cancello. Me li scrivi? Vengo io così non disturbate nessuno.",l:"richiesta di accesso (indirizzo dai post)",o:[
+   {t:"«L’indirizzo e il codice non li do a un numero nuovo. Se serve, ti richiamo io sul numero che avevo.»",ok:1,m:"Giusto: indirizzo e codice d’ingresso non si danno a chi non hai verificato. Richiami tu il numero che conosci."},
+   {t:"«Via delle Rose 14, il codice è 4471.»",m:"Ora il truffatore sa dove andare e come entrare: è esattamente ciò che cercava."},
+   {t:"«Ti mando solo l’indirizzo, il codice lo dico dopo.»",m:"Anche solo l’indirizzo, con le date delle ferie, dice quando la casa resta vuota."}]},
+  {c:"Grazie! Ultima cosa: Briciola ha bisogno di una visita, mi fai un bonifico di 300 €? Te li restituisco quando tornate. Non dirlo agli altri, mi vergogno.",l:"pressione emotiva + denaro",o:[
+   {t:"«Non faccio bonifici a un numero nuovo. Ti richiamo io sul numero che conosco e parlo con te.»",ok:1,m:"Giusto: l’affetto per la gatta è la leva. Niente soldi e nessuna fretta: richiami tu il numero che conosci."},
+   {t:"«Va bene, mandami l’IBAN.»",m:"Chiedere l’IBAN significa entrare nella truffa: il bonifico non si annulla facilmente."},
+   {t:"«Ti mando solo 50 € per aiutarti.»",m:"Anche una somma piccola apre la porta: può chiederne altre, e i dati bancari sono già esposti."}]}]}];
+let sc=0,tn=0;
+function startCall(){sc=0;scen()}
+function scen(){const S=SCEN[sc];tn=0;$("chat").innerHTML="";$("f3").innerHTML="";$("q3").innerHTML="";$("sch").textContent="Conversazione "+(sc+1)+"/"+SCEN.length+": "+S.t;$("sci").textContent=S.intro;turn()}
+function turn(){const S=SCEN[sc],T=S.turns[tn];$("chat").insertAdjacentHTML("beforeend",`<div class="bub c"><small>${S.who}</small>${T.c}<br><span class="lever">leva: ${T.l}</span></div>`);
+ $("opts3").innerHTML=shuf(T.o.map((o,i)=>[o,i])).map(([o,i])=>`<button class="opt" data-i="${i}">${o.t}</button>`).join("");$("chat").scrollTop=1e5}
+$("opts3").onclick=e=>{const b=e.target.closest(".opt");if(!b)return;const S=SCEN[sc],T=S.turns[tn],o=T.o[+b.dataset.i];
+ $("chat").insertAdjacentHTML("beforeend",`<div class="bub me">${o.t}</div>`);$("opts3").innerHTML="";$("chat").scrollTop=1e5;
+ if(!o.ok){$("f3").innerHTML=`<div class="fb b">✖ ${o.m}</div><p><button class="btn ghost" id="rl">Rileggi la spiegazione</button> <button class="btn" id="rc">Ricomincia questa conversazione</button></p>`;$("rl").onclick=()=>{const n=$("t3").querySelector(".note");if(n)n.scrollIntoView({behavior:"smooth",block:"center"})};$("rc").onclick=scen;return}
+ tn++;
+ if(tn<S.turns.length){$("f3").innerHTML=`<div class="fb g">✔ ${o.m}</div><p><button class="btn" id="cn">Continua la conversazione</button></p>`;$("cn").onclick=()=>{$("f3").innerHTML="";turn()};return}
+ if(sc<SCEN.length-1){$("f3").innerHTML=`<div class="fb g">✔ ${o.m}<br><br><b>Conversazione fermata.</b> ${S.debrief}</div><p><button class="btn" id="ns">Prossima conversazione</button></p>`;$("ns").onclick=()=>{sc++;scen()};return}
+ $("f3").innerHTML=`<div class="fb g">✔ ${o.m}<br><br><b>Conversazione fermata.</b> ${S.debrief}</div>`;
+ quiz($("q3"),[
+  {h:"Cosa hanno in comune le cinque conversazioni?",o:[
+   {t:"Chi scriveva usava fiducia, urgenza o autorità, più dati veri presi dalle foto, e chiedeva qualcosa che non si dà mai: password, codici, informazioni o foto.",ok:1,e:"Esatto. I dati veri (turno, badge, indirizzo, ferie, nome della gatta) rendono la truffa credibile, ma non vera. Cambia il canale, non il meccanismo: fermati e verifica tu."},
+   {t:"Erano tutte messaggi di amici di Elia.",e:"Erano tutte persone che Elia non conosceva o che fingevano di essere qualcun altro."},
+   {t:"Erano tutte conversazioni normali, senza rischi.",e:"Ognuna aveva una richiesta pericolosa nascosta dietro un pretesto credibile."}]},
+  {h:"Quale regola vale sempre quando qualcuno ti chiede password, codici o foto di documenti?",o:[
+   {t:"Fermo la conversazione e verifico io, su un canale ufficiale che scelgo io.",ok:1,e:"Esatto. Sei tu a scegliere il canale, quindi sai con chi parli. I codici e le password non si danno a nessuno."},
+   {t:"Do solo metà dell’informazione, per prudenza.",e:"Anche metà password o metà codice aiuta chi vuole entrare."},
+   {t:"Mi fido se sa già molte cose su di me.",e:"Proprio il contrario: sapere molte cose è il trucco, perché le ha trovate in rete."}]}
+ ],()=>{pola(2);go(4);startSets()})};
+
+/* ---------- sviluppo 4 · contatti ---------- */
+const REQ=[
+ {n:"Dott. Luca Bianchi",av:"👨‍🔬",d:["Account creato nel 2016","412 post con foto in osservatori reali","6 amici in comune, tutti colleghi dell’osservatorio","Bio: «Fisico, Università di Bologna»","Messaggio: nessuno"],a:0,e:"Account vecchio e attivo, amici in comune che sono davvero colleghi e profilo coerente: puoi accettare.",h:"Guarda da quanto esiste l’account e chi sono gli amici in comune: qui tutto è coerente."},
+ {n:"Giulia Astro_93",av:"👩‍💼",d:["Account creato 3 giorni fa","2 post, foto profilo da catalogo","3 amici in comune (profili recenti)","Bio: «Giornalista · astronomia»","Messaggio: «Mi mandi una foto della cupola?»"],a:2,e:"Account nuovo, foto da catalogo, amici in comune sospetti e richiesta di una foto del luogo: è una finta giornalista, da rifiutare e segnalare.",h:"Un account nuovo che chiede subito foto del luogo di lavoro è un campanello d’allarme."},
+ {n:"Assistenza Osservatorio",av:"🛠️",d:["Pagina creata ieri","0 post","0 amici in comune","Bio: «Assistenza tecnica ufficiale»","Messaggio: «Conferma il tuo account»"],a:2,e:"Pagina nuova, senza contenuti e che chiede conferme: un servizio vero non ti scrive così. Rifiuta e segnala.",h:"Una pagina creata ieri e senza contenuti non è un’assistenza ufficiale."},
+ {n:"Anna Rossi",av:"👩‍🔬",d:["Account creato 2 giorni fa","3 post copiati da un altro profilo","Stesso nome e stessa foto di una tua collega","Bio: «Ho cambiato account, aggiungimi!»","Messaggio: «Ciao, sono Anna! Accetta la richiesta.»"],a:1,e:"Potrebbe essere davvero la tua collega con un account nuovo, ma è più probabile un profilo clonato. Prima di accettare, chiamala sul numero che hai già.",h:"Non sai se è lei o una copia: la cosa giusta è controllare con un altro canale prima di decidere."},
+ {n:"Chiara Fabbri",av:"👩",d:["Account creato nel 2013","890 post con foto della tua scuola","12 amici in comune, compagni del Liceo Galilei","Bio: «Insegnante · Faenza»","Messaggio: «Quanto tempo! Ti ricordi di me?»"],a:0,e:"Account vecchio, molti post coerenti con la tua vita reale e amici in comune che conosci: puoi accettare.",h:"Anche qui contano età dell’account, contenuti e amici in comune: sono coerenti con una persona vera."},
+ {n:"InvestiAmici Pro",av:"📈",d:["Account creato 10 giorni fa","Segue 4.800 account","0 amici in comune","Bio: «Guadagna 500 € al giorno col trading»","Messaggio: «Ti va di entrare nel nostro gruppo esclusivo?»"],a:2,e:"Promesse di guadagni facili, nessun contatto in comune e un account che segue migliaia di persone: è una truffa. Rifiuta e segnala.",h:"Promesse di soldi facili e nessun amico in comune sono tipici delle truffe."}];
+const ACTS=["Accetta","Verifica prima","Rifiuta e segnala"];
+let rqi=0,s4=false;
+function startSets(){if(s4)return;s4=true;rqi=0;showReq()}
+function showReq(){const r=REQ[rqi];$("rq").textContent="Richiesta "+(rqi+1)+"/"+REQ.length;$("f4").innerHTML="";
+ $("card").innerHTML=`<div class="pf"><div class="av">${r.av}</div><h3>${r.n}</h3><ul>${r.d.map(x=>"<li>"+x+"</li>").join("")}</ul><div class="acts">${ACTS.map((a,i)=>`<button class="btn ${i===0?"":"ghost"}" data-a="${i}">${a}</button>`).join("")}</div></div>`}
+$("card").onclick=e=>{const b=e.target.closest("button[data-a]");if(!b||$("nr"))return;const r=REQ[rqi],a=+b.dataset.a;
+ if(a!==r.a){$("f4").innerHTML=`<div class="fb b">✖ Non è l’azione migliore con ${ACTS[a].toLowerCase()}. ${r.h}</div>`;return}
+ const last=rqi===REQ.length-1;
+ $("f4").innerHTML=`<div class="fb g">✔ ${r.e}${last?"":'<p><button class="btn" id="nr">Prossima richiesta</button></p>'}</div>`;
+ if(!last){$("nr").onclick=()=>{rqi++;showReq()};return}
+ $("card").innerHTML="";$("rq").textContent="Richieste esaminate: 6/6";
+ quiz($("q4"),[
+  {h:"Una persona che non conosci chiede l’amicizia. Ha 3 amici in comune con te. Cosa fai?",o:[
+   {t:"Controllo il profilo e, se non la conosco davvero, non accetto: gli amici in comune non bastano.",ok:1,e:"Esatto. I profili falsi cercano proprio amici in comune per sembrare affidabili. Se non la conosci, chiedi a chi conosci davvero o rifiuta."},
+   {t:"Accetto: tre amici in comune sono una garanzia.",e:"Non lo sono: gli amici possono aver accettato a loro volta senza controllare."},
+   {t:"Accetto e poi guardo meglio.",e:"Dopo l’accettazione la persona vede già i tuoi contenuti."}]},
+  {h:"Hai chiamato Anna: dice che quell’account non è suo. Cosa fai?",o:[
+   {t:"Rifiuto e segnalo il profilo clonato, e avviso Anna e i colleghi che qualcuno usa il suo nome.",ok:1,e:"Esatto. Segnalare protegge anche gli altri: il profilo clonato potrebbe contattare tutti i suoi amici."},
+   {t:"Rifiuto e basta, senza dire niente a nessuno.",e:"Rifiutare è giusto, ma se non avvisi Anna e gli altri, il profilo falso continua a ingannare."},
+   {t:"Accetto comunque, ma gli scrivo di smettere.",e:"Accettandolo gli dai accesso ai tuoi contenuti: non ha senso ragionarci con un truffatore."}]}
+ ],()=>{startPriv()})};
+/* ---------- sviluppo 4b · impostazioni privacy ---------- */
+const PRIV=[
+ {k:"Chi può vedere i post",d:"Il pubblico predefinito di ogni nuovo post.",o:[
+  {t:"Pubblico (tutti)",e:"Con il pubblico chiunque vede i post, anche chi non conosci e i profili falsi. I post di Elia mostrano l’osservatorio: meglio chiudere.",pv:"I post sono visibili a chiunque"},
+  {t:"Solo amici",ok:1,e:"Giusto: i post restano alle persone che hai accettato. Chi non è tra gli amici non li vede.",pv:"I post sono visibili solo agli amici"},
+  {t:"Amici degli amici",e:"Gli amici degli amici sono persone che non hai controllato: non sono un pubblico ristretto.",pv:"I post sono visibili anche agli amici degli amici"}]},
+ {k:"Chi può vedere la lista amici",d:"L’elenco delle persone che hai accettato.",o:[
+  {t:"Tutti",e:"La lista amici è una mappa delle tue relazioni: serve a chi vuole fingersi un conoscente o clonare un profilo.",pv:"La lista amici è visibile a tutti"},
+  {t:"Solo amici",e:"Meglio di tutti, ma chi è già tra i contatti può copiarla e usarla per contattare gli altri fingendosi te.",pv:"La lista amici è visibile solo agli amici"},
+  {t:"Solo io",ok:1,e:"Giusto: la lista amici non serve a nessun estraneo. Nasconderla toglie ai truffatori la mappa delle tue relazioni.",pv:"La lista amici è visibile solo a te"}]},
+ {k:"Chi può vedere le foto in cui sei taggata",d:"Le immagini in cui qualcun altro ti ha taggata.",o:[
+  {t:"Tutti",e:"Una foto in cui sei taggata può mostrarti in un posto o con persone che non hai scelto di mostrare, e chiunque la vede.",pv:"Le foto in cui sei taggata sono visibili a tutti"},
+  {t:"Amici degli amici",e:"Anche qui il pubblico non è controllato: i tag vanno limitati a chi conosci davvero.",pv:"Le foto in cui sei taggata sono visibili agli amici degli amici"},
+  {t:"Solo amici",ok:1,e:"Giusto: le foto in cui ti taggano le vedono solo le persone che hai accettato.",pv:"Le foto in cui sei taggata sono visibili solo agli amici"}]},
+ {k:"Approvazione dei tag",d:"Se un tag compare subito o solo dopo il tuo ok.",o:[
+  {t:"Disattivata: compaiono subito",e:"Senza approvazione chiunque può taggarti e collegarti a un contenuto prima che tu lo veda.",pv:"I tag compaiono subito, senza il tuo controllo"},
+  {t:"Attiva: approvo ogni tag",ok:1,e:"Giusto: un tag diventa visibile solo dopo il tuo controllo. Nessuno ti collega a un post senza permesso.",pv:"I tag compaiono solo dopo la tua approvazione"}]},
+ {k:"Posizione nei post",d:"Se il luogo viene aggiunto automaticamente.",o:[
+  {t:"Sempre: in ogni post",e:"La posizione dice dove sei e quando: anche una foto innocua diventa un appuntamento. E rivela quando la casa è vuota.",pv:"Ogni post mostra la tua posizione"},
+  {t:"Solo in viaggio",e:"Anche in viaggio la posizione dice che non sei a casa e quando torni: non è più sicura.",pv:"La posizione compare nelle foto di viaggio"},
+  {t:"Mai: la aggiungo se serve",ok:1,e:"Giusto: la posizione si decide caso per caso. Di default non deve partire da sola.",pv:"La posizione non viene aggiunta da sola"}]},
+ {k:"Chi può trovarti nella ricerca",d:"Chi può cercarti per nome o per numero.",o:[
+  {t:"Chiunque mi cerchi",e:"Chi ti cerca per nome può trovarti senza conoscerti: è così che iniziano molti contatti falsi.",pv:"Chiunque può trovarti cercando il tuo nome"},
+  {t:"Solo chi ha il mio numero",ok:1,e:"Giusto: ti trovano solo le persone che hanno già un tuo contatto. Gli altri no.",pv:"Ti trovano solo le persone che hanno già il tuo numero"},
+  {t:"Chiunque abbia un profilo",e:"È quasi come “tutti”: chiunque può cercarti e scriverti.",pv:"Ti trova chiunque abbia un profilo sulla piattaforma"}]}];
+let pvDone=false;
+function startPriv(){
+ if(pvDone)return;pvDone=true;
+ PRIV.forEach(s=>s.v=0);
+ const box=$("priv");box.classList.remove("hidden");
+ box.innerHTML=`<h3 class="qh">Impostazioni · chi vede cosa</h3>
+  <div class="note"><b>Il profilo è ancora com’era quando Elia è sparita.</b> Ogni voce si imposta separatamente: non basta mettere “privato” una volta. Scegli l’opzione più sicura per ogni voce, poi controlla l’anteprima qui sotto: mostra cosa vede una persona che non è tra gli amici.</div>
+  <div id="pp"></div>
+  <div class="pv" id="pv4"></div>
+  <p><button class="btn" id="cp">Controlla le impostazioni</button></p>
+  <div id="fp"></div>`;
+ drawPriv();$("cp").onclick=checkPriv;
+}
+function drawPriv(){
+ $("pp").innerHTML=PRIV.map((s,i)=>`<div class="set" data-i="${i}"><b>${s.k}</b><small>${s.d}</small><select data-i="${i}">${s.o.map((o,j)=>`<option value="${j}"${j===0?" selected":""}>${o.t}</option>`).join("")}</select><div class="why"></div></div>`).join("");
+ $("pp").onchange=e=>{const s=e.target.closest("select");if(!s)return;const row=s.closest(".set");row.classList.remove("ok","bad");row.querySelector(".why").textContent="";$("fp").innerHTML="";PRIV[+s.dataset.i].v=+s.value;drawPV()};
+ drawPV();
+}
+function drawPV(){
+ $("pv4").innerHTML=`<h4>Anteprima · il profilo di Elia</h4><p class="who">Vista di chi apre il profilo e non è tra gli amici.</p><ul>${PRIV.map(s=>{const o=s.o[s.v];return `<li class="${o.ok?"ok":"bad"}">${o.pv}</li>`}).join("")}</ul>`;
+}
+function checkPriv(){
+ const rows=[...$("pp").querySelectorAll(".set")];
+ let bad=0;
+ PRIV.forEach((s,i)=>{const o=s.o[s.v],row=rows[i];
+  row.classList.remove("ok","bad");row.classList.add(o.ok?"ok":"bad");
+  row.querySelector(".why").textContent=o.e;if(!o.ok)bad++;
+ });
+ drawPV();
+ if(bad){
+  $("fp").innerHTML=`<div class="fb b">✖ ${bad===1?"Una voce non è ancora sicura":"Ci sono ancora "+bad+" voci non sicure"}. Leggi le spiegazioni qui sopra e sistema le voci in rosso: l’anteprima si aggiorna da sola.</div>`;
+  return;
+ }
+ $("pp").querySelectorAll("select").forEach(s=>s.disabled=true);
+ $("fp").innerHTML=`<div class="fb g">✔ Profilo sistemato. Ricorda: il profilo “privato” non basta se tag, posizione, lista amici e ricerca restano aperti. Ogni voce va controllata.<p><button class="btn" id="gp">Ancora due domande</button></p></div>`;
+ $("gp").onclick=()=>{quiz($("q5"),[
+  {h:"Hai impostato i post “solo amici”. Basta per essere al sicuro?",o:[
+   {t:"No: restano da controllare tag, posizione, lista amici e ricerca. Sono voci separate.",ok:1,e:"Esatto. La visibilità dei post è una sola voce: le altre possono lasciare aperte informazioni."},
+   {t:"Sì: se i post sono privati, nessuno vede altro.",e:"Non è così: la lista amici, i tag e la posizione hanno impostazioni separate."},
+   {t:"Sì, purché il profilo non abbia la foto.",e:"La foto profilo non c’entra: sono le altre voci a restare aperte."}]},
+  {h:"Un amico ti tagga in una foto scattata all’osservatorio, con la posizione attiva. Cosa fai?",o:[
+   {t:"Controllo il tag prima di approvarlo e chiedo di togliere la posizione: la foto dice dove lavoro.",ok:1,e:"Esatto. Tag e posizione vanno controllati prima che il post diventi visibile."},
+   {t:"Approvo subito: è un amico, non può essere un problema.",e:"Anche un amico può sbagliare: la foto può rivelare il luogo di lavoro a chi non dovrebbe vederlo."},
+   {t:"Approvo e metto il profilo privato: basta.",e:"Il profilo privato non cancella la posizione già scritta nel post: va tolta dalla foto."}]}
+ ],()=>{pola(3);go(5)})};
+}
+if(FORM_URL.startsWith("http"))$("lock").href=FORM_URL;else{$("warn").classList.remove("hidden");$("lock").onclick=e=>e.preventDefault()}
+</script>
+</body>
+</html>
